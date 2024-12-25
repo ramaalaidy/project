@@ -1,0 +1,232 @@
+/*task*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;  
+}
+.logo-container {
+  text-align: center;
+  display: flex;
+  justify-content: center 10px; /* توسيط الشعار أفقياً */
+  align-items: center ;    /* توسيط الشعار عمودياً */
+  height: 15vh;          /* اجعل الحاوية بارتفاع النافذة */
+  background-color: #0a65e5; /* لون خلفية */
+}
+
+/* تنسيق الشعار */
+.logo {
+  width: 100px; /* عرض الشعار */
+  height: auto; /* يجعل الارتفاع تلقائي للحفاظ على النسبة */
+  border-radius: 10px; /* يجعل الحواف مستديرة */
+  transition: transform 0.3s ease; /* تأثير عند التمرير */
+}
+
+/* تأثير عند التمرير */
+.logo:hover {
+  transform: scale(1.1); /* تكبير الشعار قليلاً */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 550px;
+  width: 150%;
+  background-color: #e9ebf1;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid rgb(7, 7, 7); padding: 10px; width: fit-content;
+
+  }
+  
+  .a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      
+  }
+  
+  /*task 1*/
+  
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e90ff, #87cefa);
+    color: #fff;
+}
+
+
+
+.hero-text h1 {
+  font-family: "Hind Mysuru", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5rem;
+  margin: 50px;
+}
+
+
+.hero-img {
+    max-width: 10%;
+    padding-right: 300px;
+}
+
+.hero-img img {
+
+    width: 100%;
+    border-radius: 100px;
+}
+
+/*test2*/
+
+.container1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.container h2 {
+  text-align: center;
+    font-size: 1.5em;
+    color: #000000; 
+    margin-bottom: 30px;
+}
+
+.item {
+  
+  position: relative;
+  width: 300px; /* عرض الصورة */
+  height: 300px; /* ارتفاع الصورة */
+  overflow: hidden; /* لإخفاء أي محتوى زائد عن الحاوية */
+}
+
+.default,
+.hover {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out; /* تأثير انتقال سلس */
+}
+
+.item {
+  opacity: 1; /* الصورة الأولى تظهر */
+}
+
+.hover {
+  opacity: 0; /* الصورة الثانية مخفية */
+}
+
+.item:hover .default {
+  opacity: 0; /* إخفاء الصورة الأولى عند التحويم */
+}
+
+.item:hover .hover {
+  opacity: 1; /* إظهار الصورة الثانية عند التحويم */
+}
+
+
+/*test3*/
+.expertise {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.image-container {
+  position: relative;
+  width: 300px; /* عرض الصورة */
+  height: 200px; /* ارتفاع الصورة */
+  overflow: hidden; /* لإخفاء أي محتوى زائد عن الحاوية */
+}
+
+.image-default,
+.image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out; /* تأثير انتقال سلس */
+}
+
+.image-default {
+  
+  opacity: 1; /* الصورة الأولى تظهر */
+}
+
+.image-hover {
+  opacity: 0; /* الصورة الثانية مخفية */
+}
+
+.image-container:hover .image-default {
+  
+  opacity: 0; /* إخفاء الصورة الأولى عند التحويم */
+}
+
+.image-container:hover .image-hover {
+  opacity: 1; /* إظهار الصورة الثانية عند التحويم */
+}
+
+
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.item p {
+    font-size: 1em;
+    color: #000100; 
+    margin: 0;
+}
+
+
+
+/*task4*/
+
+.container h1{
+  text-align: center;
+}
+
+.icon{
+  width: 50px;
+  border: 2px solid #000; /* إطار بعرض 5 بكسل ولون أسود */
+  border-radius: 10px; /* زوايا دائرية (اختياري) */
+}
+/*task5*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1e90ff;
+    color: #fff;
+}
+
+.cv-section .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
